@@ -1,0 +1,12 @@
+// The program input for nrm/src/main.leo
+[mint]
+balance: u32 = 100u32;
+
+[transfer]
+receiver: address = aleo1zpsr2qlhxwarg8j3tjtv4rusd2muld7aj5fzrt8dvqz263n6xgqqe9ps3j;
+amount: u32 = 10u32;
+input: Token = Token {
+  owner: aleo1yaz7ckkmlz2fgsm27lkzmqjx55ec6320rzetffd3udnye7rexsysx0jglz,
+  balance: 100u32,
+  _nonce: 5506489303791411488023296025061129648804485175297194191657957987564242737156group
+};
