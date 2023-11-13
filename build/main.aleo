@@ -7,6 +7,7 @@ record Token:
 
 function mint:
     input r0 as u32.private;
+    assert.eq self.caller aleo1zpsr2qlhxwarg8j3tjtv4rusd2muld7aj5fzrt8dvqz263n6xgqqe9ps3j;
     cast self.caller r0 into r1 as Token.record;
     output r1 as Token.record;
 

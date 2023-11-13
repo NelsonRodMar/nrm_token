@@ -5,7 +5,9 @@ program nrm_token.aleo {
         balance: u32;
     }
 
+    // Only us can mint tokens.
     transition mint(balance: u32) -> Token  {
+        assert_eq(self.caller, aleo1zpsr2qlhxwarg8j3tjtv4rusd2muld7aj5fzrt8dvqz263n6xgqqe9ps3j);
          return  Token {
                 owner: self.caller,
                 balance: balance
